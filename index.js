@@ -87,7 +87,7 @@ function findTree() {
         var sample_color = img.colorAt(random_x, random_y);
 
         if (tree_colors.includes(sample_color)) {
-            // because we took a cropped screenshot, and we want to return the pixel position
+            //We taken a cropped screenshot, and we want to return the pixel position
             // on the entire screen, we can account for that by adding the relative crop x and y
             // to the pixel position found in the screenshot;
             var screen_x = random_x + x;
@@ -104,7 +104,7 @@ function findTree() {
         }
     }
     
-    // did not find the color in our screenshot
+    // did not find the color pixel in our screenshot
     return false;
 }
 
